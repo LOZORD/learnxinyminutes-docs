@@ -7,6 +7,7 @@ contributors:
     - ["Jakub Trzebiatowski", "http://cbs.stgn.pl"]
     - ["Marco Scannadinari", "https://marcoms.github.io"]
     - ["Leo Rudberg", "https://github.com/lozord"]
+    - ["Riccardo Mutschlechner", "https://github.com/ricky54326"]
 lang: fr-fr
 ---
 
@@ -38,7 +39,7 @@ enum jours {DIM = 1, LUN, MAR, MER, JEU, VEN, SAM};
 // Pour les headers à vous, utilisez "les guillemets"
 //#include "mes_fonctions.h"
 
-// En C, declarez vos fonctions en avénce dans un doc .h ou au sommet le doc .c
+// En C, declarez vos fonctions en avance dans un doc .h ou au sommet le doc .c
 void fonction_1();
 int fonction_2(void);
 
@@ -60,10 +61,10 @@ int main(void) {
   // Types
   ///////////////////////////////////////
 
-  // ints sont 4 octets ("bytes" en anglais) d'habitude
+  // ints (comme "entier") sont 4 octets ("bytes" en anglais) d'habitude
   int x_int = 0;
 
-  // shorts sont 2 bytes d'habitude
+  // shorts (comme "court") sont 2 octets d'habitude
   short x_short = 0;
 
   // chars sont garantis être un octet
