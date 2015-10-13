@@ -69,34 +69,35 @@ int main(void) {
 
   // chars sont garantis être un octet
   char x_char = 0;
-  char y_char = 'y'; // designez un char littéral avec les apostrophes
+  char y_char = 'y'; // indiquez un char littéral avec les apostrophes
 
-  // longs are often 4 to 8 bytes; long longs are guaranteed to be at least
-  // 64 bits
-  //TODO START HERE
+  // longs sont 4 ou 8 octets d'habitude
+  // long longs sont garantis au moins 16 octets
   long x_long = 0;
   long long x_long_long = 0;
 
-  // floats are usually 32-bit floating point numbers
-  float x_float = 0.0f; // 'f' suffix here denotes floating point literal
+  // floats sont 8 octets d'habitude.
+  float x_float = 0.0f; // 'f' indique un float
 
-  // doubles are usually 64-bit floating-point numbers
-  double x_double = 0.0; // real numbers without any suffix are doubles
+  // floats sont 16 octets d'habitude
+  double x_double = 0.0; // sans suffixe, on reçoit un double
 
-  // integer types may be unsigned (greater than or equal to zero)
+  // les entiers peuvent être sans signes (justes zéros ou positifs)
   unsigned short ux_short;
   unsigned int ux_int;
   unsigned long long ux_long_long;
 
-  // chars inside single quotes are integers in machine's character set.
-  '0'; // => 48 in the ASCII character set.
-  'A'; // => 65 in the ASCII character set.
+  // chars sont simplement numériques!
+  '0'; // => 48 en ASCII
+  'A'; // => 65 en ASCII
 
   // sizeof(T) gives you the size of a variable with type T in bytes
-  // sizeof(obj) yields the size of the expression (variable, literal, etc.).
-  printf("%zu\n", sizeof(int)); // => 4 (on most machines with 4-byte words)
+  // pour un type T, sizeof(T) retourne le nombre des octets
+  // sizeof marche aussi avec les variables, les littérals, etc.
+  printf("%zu\n", sizeof(int)); // => 4
 
 
+  // --- START HERE ---
   // If the argument of the `sizeof` operator is an expression, then its argument
   // is not evaluated (except VLAs (see below)).
   // The value it yields in this case is a compile-time constant.
